@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Favorite fruit start</title>
+    <style>
+    body {
+        margin : 20px;
+        padding : 20px;
+    }
+    input {
+        width : 200px;
+        height : 30px;
+        display: block;
+    }
+    button {
+        width : 205px;
+        height: 38px;
+        border: 2px solid;
+        padding : 10px;
+        font-size: 14px;
+        line-height: 1;
+        display: block;
+        margin-top:30px
+    }
+    input:invalid {
+        border: 2px dashed red;
+    }
+    input:invalid:required {
+        background-color:lightsalmon
+    }
+    input:valid {
+        border: 2px solid black;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Form Validation using HTML Only</h1>
+    <form>
+      <label for="choose"><h3>Would you prefer a java or a python?</h3></label>
+      <input id="choose" name="i_like" type="text" required minlength="4" maxlength="6" pattern="[Jj]ava|[Pp]ython">
+      <label for="age"><h3>What is your year of experinece in java?</h3></label>
+      <input id="age" name="your_age" type="number" min="1" max="10">
+      <label for="email"><h3>What is your email id?</h3></label>
+      <input id="age" name="your_age" type="email">
+
+      <button>Submit</button>
+    </form>
+</body>
+
+</html>
